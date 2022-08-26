@@ -2,7 +2,7 @@
    /*
    Plugin Name: AIM Experts Intergration
    Plugin URI: https://aimexperts.com
-   description: Legacy plugin that helps add the aim features to a wordpress website
+   description: Legacy plugin that helps add the aim features to a wordpress website. connected to local drive
    Version: 1.0.1
    Author: Liam Kennedy
    Author URI: https://aimexperts.com
