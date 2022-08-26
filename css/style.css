@@ -1,0 +1,426 @@
+ .aim-btn-table{
+        width:206px;
+        color: white;
+        position: relative;
+        left: -2px;
+    } 
+
+.aim-btn-table > tbody tr td {
+    border-bottom: none;
+}
+
+.aim-btn-table img{
+   width: 40px;
+    height: 40px;
+}
+
+.vehicle-slider .fa.fa-angle-right{
+	z-index:1000!important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+    
+    .aim-btn-text{
+		font-family: 'Source Sans Pro', sans-serif;
+        font-size: 14px;
+         position: relative;
+    left:1px;
+        color: white;
+        
+    }    
+    
+
+.reserve-button{
+    
+    background: #383838!important;
+        width: 60px;
+        height: 60px;
+    border: none;
+    border-radius: 30px;
+    transition: 0.5s!important;
+    color: white!important;
+    overflow: hidden;
+    box-shadow: none!important;
+    padding: 0 12px;
+margin: 15px auto;
+    text-align: left;
+
+}
+    
+.reserve-button:hover,.reserve-button:focus, .reserve-button:active{
+    background: #00B2FF!important;
+    width: 190px;
+    
+    } 
+    
+.credit-button{
+    
+    background: #383838!important;
+        width: 60px;
+        height: 60px;
+    border: none;
+    border-radius: 30px;
+    transition: 0.5s!important;
+    color: white!important;
+    overflow: hidden;
+    box-shadow: none!important;
+    padding: 0 9px;
+margin: 15px auto;
+    text-align: left;
+
+}
+    
+.credit-button:hover{
+    background: #00CA14!important;
+    width: 190px;
+    
+    } 
+
+
+.btest-drive-button{
+    background: #383838!important;
+        width: 60px;
+        height: 60px;
+    border: none;
+    border-radius: 30px;
+    transition: 0.5s!important;
+    color: white!important;
+    overflow: hidden;
+    box-shadow: none!important;
+    padding: 0 9px;
+margin: 15px auto;
+    text-align: left;
+}
+
+.btest-drive-button:hover{
+     background: #FFB800!important;
+    width: 190px;
+    
+}
+
+
+.vtrade-button{
+    background: #383838!important;
+        width: 60px;
+        height: 60px;
+    border: none;
+    border-radius: 30px;
+    transition: 0.5s!important;
+    color: white!important;
+    overflow: hidden;
+    box-shadow: none!important;
+    padding: 0 9px;
+margin: 15px auto;
+    text-align: left;
+    
+}
+
+.vtrade-button:hover{
+     background: #FF0000!important;
+    width: 190px;
+    
+}
+
+.moffer-button{
+    background: #383838!important;
+        width: 60px;
+        height: 60px;
+    border: none;
+    border-radius: 30px;
+    transition: 0.5s!important;
+    color: white!important;
+    overflow: hidden;
+    box-shadow: none!important;
+    padding: 0 9px;
+margin: 15px auto;
+    text-align: left;
+    
+}
+
+.moffer-button:hover{
+     background: #00E2AC!important;
+    width: 190px;
+}
+
+.greview-button{
+    background: #383838!important;
+        width: 60px;
+        height: 60px;
+    border: none;
+    border-radius: 30px;
+    transition: 0.5s!important;
+    color: white!important;
+    overflow: hidden;
+    box-shadow: none!important;
+    padding: 0 9px;
+margin: 15px auto;
+    text-align: left;
+}
+
+.greview-button:hover{
+    background: #BABABA!important;
+    width: 190px;
+}
+
+.insurance-button{
+    background: #383838!important;
+        width: 60px;
+        height: 60px;
+    border: none;
+    border-radius: 30px;
+    transition: 0.5s!important;
+    color: white!important;
+    overflow: hidden;
+    box-shadow: none!important;
+    padding: 0 9px;
+margin: 15px auto;
+    text-align: left;
+    
+}
+
+.insurance-button:hover{
+    background: #383838!important;
+    width: 190px;
+}
+
+
+.aim-floating-btns{
+    width:330px; position: fixed; z-index:999; right: -60px; top: 245px;
+}
+
+
+.aim-btn-box{
+    display: inline;
+}
+
+
+@media screen and (max-width: 415px) and (orientation: portrait) {
+    
+   .aim-btn-box{
+}
+    
+    .aim-floating-btns{
+    width:auto; right:0; top: 160px;
+}
+    
+    
+}
+
+@media screen and (max-width: 870px) and (orientation: landscape) {
+    
+   .aim-btn-box{}
+    
+    .aim-floating-btns{
+        
+        width:auto; right:0; top:0;
+    }
+    
+    .reserve-button, .credit-button, .btest-drive-button, .vtrade-button, .moffer-button, .greview-button, .insurance-button  {
+        
+        margin: 0px auto;
+        width: 52px;
+        height: 52px;
+        
+    }
+    
+    .aim-btn-table img {
+    width: 32px;
+    height: 32px;
+}
+    
+    #header .logo-main .mobile-menu-trigger{
+        right: 50px!important;
+    }
+    
+    #wpfront-notification-bar.wpfront-fixed{
+        z-index:999!important;
+    }
+    
+    
+}
+
+
+
+
+.stm-single-car-side{
+    min-width: 320px;
+}
+
+.aim-button {
+    margin: 5px 0;
+}
+
+#aim_lease_calculator{
+    max-width: 330px;
+}
+
+#aim_lease_calculator .lease-cal-heading h2 a {
+color: #fff!important;
+}
+
+[class*=vehicleListings].card .content .link .bzl-vcta-drawer .bzl-vcta a[data-bzl-id="aimexp-dp-cta"] {
+
+    background: none;
+
+}
+
+.vsa-modal{
+   background: url("../img/CTA_With_Negotiate.gif")!important;
+        background-repeat: no-repeat!important;
+     box-shadow: none!important;
+    border: none!important;
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    
+}
+
+.test-drive {
+    
+    
+    background: url(../img/Book_Test_Drive_Base.png)!important;
+    width: 100%!important;
+    max-width: 330px!important;
+    background-repeat: no-repeat!important;
+    height: 50px!important;
+    box-shadow: none!important;
+    background-size: contain!important;
+    border: none!important;
+}
+
+.test-drive:hover {
+    
+    background: url(../img/Book_Test_Drive_Hover.png)!important;
+        background-repeat: no-repeat!important;
+    opacity: 1!important;
+    background-size: contain!important;
+}
+
+
+
+
+
+.aim-window-sticker {
+    
+    background: url(../img/Window_Sticker_Base.png)!important;
+    width: 100%!important;
+    max-width: 330px!important;
+    background-repeat: no-repeat!important;
+    height: 50px!important;
+    box-shadow: none!important;
+    background-size: contain!important;
+    border: none!important;
+    
+}
+
+
+.aim-window-sticker:hover {
+     background: url(../img/Window_sticker_Hover.png)!important;
+        background-repeat: no-repeat!important;
+    opacity: 1!important;
+    background-size: contain!important;
+}
+
+.aim-g-review {
+    
+    background: url(../img/Google_Review_Base.png)!important;
+    width: 100%!important;
+    max-width: 330px!important;
+    background-repeat: no-repeat!important;
+    height: 50px!important;
+    box-shadow: none!important;
+    background-size: contain!important;
+    border: none!important;
+    
+}
+
+
+.aim-g-review:hover {
+     background: url(../img/Google_Review_Hover.png)!important;
+        background-repeat: no-repeat!important;
+    opacity: 1!important;
+    background-size: contain!important;
+}
+
+.value-trade-aim{
+    background: url(../img/Value_Trade_Base.png)!important;
+    width: 100%!important;
+    max-width: 330px!important;
+    background-repeat: no-repeat!important;
+    height: 50px!important;
+    box-shadow: none!important;
+    background-size: contain!important;
+    border: none!important;
+    
+}
+
+.value-trade-aim:hover{
+     background: url(../img/Value_Trade_Hover.png)!important;
+        background-repeat: no-repeat!important;
+    opacity: 1!important;
+    background-size: contain!important;
+}
+
+
+
+
+
+.make-offer-aim{
+    background: url(../img/Make_Offer_Base.png)!important;
+    width: 100%!important;
+    max-width: 330px!important;
+    background-repeat: no-repeat!important;
+    height: 50px!important;
+    box-shadow: none!important;
+    background-size: contain!important;
+    border: none!important;
+}
+
+.make-offer-aim:hover{
+     background: url(../img/Make_Offer_Hover.png)!important;
+        background-repeat: no-repeat!important;
+    opacity: 1!important;
+    background-size: contain!important;
+}
+
+.credit-apply-aim{
+    background: url(../img/Apply_For_Credit_Base.png)!important;
+    width: 100%!important;
+    max-width: 330px!important;
+    background-repeat: no-repeat!important;
+    height: 50px!important;
+    box-shadow: none!important;
+    background-size: contain!important;
+    border: none!important;
+}
+
+.credit-apply-aim:hover{
+     background: url(../img/Apply_For_Credit_Hover.png)!important;
+        background-repeat: no-repeat!important;
+    opacity: 1!important;
+    background-size: contain!important;
+}
+
+
+.reserve-now{
+    background: url(../img/Reserve_Base.png)!important;
+    width: 100%!important;
+    max-width: 330px!important;
+    background-repeat: no-repeat!important;
+    height: 50px!important;
+    box-shadow: none!important;
+    background-size: contain!important;
+    border: none!important;
+}
+
+.reserve-now:hover{
+     background: url(../img/Reserve_Hover.png)!important;
+        background-repeat: no-repeat!important;
+    opacity: 1!important;
+    background-size: contain!important;
+}
+
+@media screen and (max-width: 800px) {
+    
+    
+}
