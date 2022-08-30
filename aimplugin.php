@@ -10,53 +10,6 @@
    */
 
 	
-add_action('admin_menu', 'aim_integration_setup_menu');
- 
-function aim_integration_setup_menu(){
-    add_menu_page( 'AIM Short Code', 'AIM Integration', 'manage_options', 'aim-shortcode', 'shortcode_aim' );
-    add_submenu_page('aim-shortcode', 'AIM Short Code', 'AIM Short Code', 'manage_options', 'aim-shortcode' );
-    
-}
-
-
-
-
-
-
-function shortcode_aim() {
-
-	ob_start();
-	?> 
-
-
-
-    <img src="<?php echo plugin_dir_url( __FILE__ ) . '/img/aim-experts-logo.png'; ?>">
-
-    <h1>The easiest way to intergrate AIM with your WordPress site    </h1>
-
-
-    <p>Just add some simple shortcode to your VDP and Listing pages<p>
-    <p>Add this shortcode to your VDP page.  <p>
-        <pre>[aim-buttons-static]</pre>
-<p>If adding code to template file use the following code</p>
-<pre>&lt;?php echo do_shortcode("[aim-buttons-static]"); ?&gt;</pre> 
-<p>for floating buttons add the following code to template file.</p>
-    <pre>&lt;?php echo do_shortcode("[aim-buttons-float]"); ?&gt;</pre> 
-<p>To add just VSA and calculator buttons to the vdp use the following short code</p>
-<pre>[aim-buttons-vdp]</pre>
-<p>or use this code within the template file</p>
-    <pre>&lt;?php echo do_shortcode("[aim-buttons-vdp]"); ?&gt;</pre>
-<p>Add this shortcode to your VLP page.  <p>
-<pre>[aim-buttons-listing]</pre>
-<p>If adding code to template file use the following code</p>
-<pre>&lt;?php echo do_shortcode("[aim-buttons-listing]"); ?&gt;</pre>
-                
-     <?php
-	echo ob_get_clean();
-}
-
-
-
 add_action('wp_enqueue_scripts', 'plugin_styles');
 
 function plugin_styles() {
@@ -68,59 +21,6 @@ add_action('wp_enqueue_scripts', 'plugin_scripts');
 function plugin_scripts() {
 	wp_enqueue_script('AimPluginScripts', plugins_url('/js/script.js', __FILE__), array('jquery'), false, true);
 }
-
-
-function aimDealerName_function() {
- $content .= 'Rainbow Ford Sales';
-    
-    return $content;
-}
-
-add_shortcode('aimDealerName', 'aimDealerName_function');  
-
-function aimDealerAddress_function() {
- $content .= 'P.O Box 1228, 4312 - 42nd Avenue, Rocky Mountain House AB T4T 1A9';
-    
-    return $content;
-}
-
-add_shortcode('aimDealerAddress', 'aimDealerAddress_function');
-
-function aimDealerCity_function() {
- $content .= 'Rocky Mountain House';
-    
-    return $content;
-}
-
-add_shortcode('aimDealerCity', 'aimDealerCity_function');
-
-
-function aimDealerBrand_function() {
- $content .= 'Ford';
-    
-    return $content;
-}
-
-add_shortcode('aimDealerBrand', 'aimDealerBrand_function');
-
-function aimDealerID_function() {
- $content .= 27562;
-    
-    return $content;
-}
-
-add_shortcode('aimDealerID', 'aimDealerID_function');
-
-function aimDealerPhone_function() {
- $content .= '403-845-3673';
-    
-    return $content;
-}
-
-add_shortcode('aimDealerPhone', 'aimDealerPhone_function');
-
-
-
 
 function aimbuynow_function() {
      $qstring = $_SERVER['QUERY_STRING'];
@@ -345,4 +245,6 @@ register_activation_hook( __FILE__, 'myplugin_activate' );
         
         }
 
-
+        include( plugin_dir_path( __FILE__ ) . 'includes/av-admin.php');
+        include( plugin_dir_path( __FILE__ ) . 'includes/shortcodes.php'); 
+        include( plugin_dir_path( __FILE__ ) . 'includes/slack.php'); 
